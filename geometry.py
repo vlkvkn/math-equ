@@ -27,3 +27,6 @@ def triangle_area(base, height):
 def pyramid_surface(length, width, height):
     result = length * width + length * math.sqrt((width/2) * (width/2) + height * height) + width * math.sqrt((length/2) * (length/2) + height*height)
     return result
+
+def pyramid_volume(height, length, width):
+    return (length * width * height) / 3
