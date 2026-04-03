@@ -15,3 +15,21 @@ def gcd(a, b):
         return a
     return gcd(b, a % b)
 
+#Use Newton's method to closely approximate the square root of a number
+def sqrt(number):
+    if number > 0:
+       x = number 
+       tolerance = 0.000000000001
+
+       while True: 
+           next = (x + number / x) / 2
+
+           if abs(next - x) < tolerance: 
+               return next
+           
+           x = next
+    elif number == 0: 
+        return 0; 
+    else: 
+        raise ValueError("Not a real number")
+  

@@ -70,7 +70,7 @@ def sin(angle):
 
 def cosin(angle):
     angle = angle % 360
-    #Sign is dependant on the angle
+    #Sign is dependant on tshe angle
     if angle >= 0 and angle < 90 or angle >= 270 and angle <= 360:
         cosine = math.sqrt(1- sin(angle) * sin(angle))
     elif angle >= 90 and angle < 180 or angle >= 180 and angle < 270:
@@ -79,5 +79,3 @@ def cosin(angle):
 
 def tan(angle):
     return sin(angle) / cosin(angle)
-
-print(tan(30))
